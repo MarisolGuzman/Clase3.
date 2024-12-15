@@ -1,0 +1,67 @@
+/* Estilos base para demostrar herencia */
+
+body {
+    margin: 0;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(315, 69%, 50%);
+    line-height: 1.6;
+}
+
+
+/* Ejemplo de cascada */
+
+.contenedor {
+    background-color: rgb(238, 203, 203);
+    padding: 20px;
+}
+
+
+/* Diferentes niveles de especificidad */
+
+.p {
+    color: rgb(84, 159, 205);
+}
+
+.texto {
+    color: rgb(194, 110, 21);
+    /* color: red !important; Si o si aplica el color rojo a los elemento de tipo P*/
+}
+
+#parrafo-especial {
+    color: rgb(208, 36, 91);
+}
+
+.contenedor .texto.destacado {
+    color: rgb(120, 29, 120);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.seccion-familiar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #198c13;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.caja-simple {
+    background-color: #4d4d96;
+    border: 2px dashed #f0eceb;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.texto-centrado {
+    text-align: center;
+    color: #266313;
+}
+
+.texto-grande {
+    font-size: 24px;
+}
+
+.texto-pequeño {
+    font-size: 12px;
+}
